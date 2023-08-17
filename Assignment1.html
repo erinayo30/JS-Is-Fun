@@ -1,0 +1,64 @@
+
+
+<script>
+    let balance= 5000;
+    const pin = 1234
+    // operation
+   let atmOperations = prompt(`Welcome to HAPPY Bank ATM
+    What do you want to do?
+    1.Press 1 to Continue
+    2. Press 2 to exit`)
+    // Welcome Page
+     if(atmOperations === "1"){
+        prompt("Please insert your PIN")}
+        else if (atmOperations !== "1"){
+            prompt("Try again") 
+        } if(1 === typeof(number)){
+            alert (`Successful`)
+    }
+    // Withdrawal operation
+     let action= prompt(`Select action
+        1. Withdrawal
+        2. Check Account Balance
+        3. Change Password
+        4. Send Money`)
+    if(action  === "1"){
+        let amount =(prompt("Enter Amount:"))
+     if (amount > balance){
+        prompt("Your Account is too low")
+    }else if (amount <=4000){
+        alert("Transaction Successful")
+    }else{
+        alert (balance-amount)
+    }
+}
+// Account Balance
+    else if(action ==="2"){
+        alert(`your account Balance is ` + balance)
+// Change Pin
+    } else if(action =="3") {
+        prompt(`Enter Your new Pin`) 
+        if (3=== typeof(number)){
+            alert(`Pin Change Successfull`)
+        }else if (3 !== typeof(number)){
+            prompt(`Confirm Password`)
+        }else{
+            alert(`Successful`)
+        }
+    } 
+
+// Send money operation
+   else if(action === "4"){
+    let banks = prompt(`Select Bank:
+    1. GTB
+    2. Access
+    3. Union`)
+        if(banks== typeof(number)){
+            prompt(`Enter Account number`)
+        }else if(2 !== typeof(number)) {
+            prompt(`Enter Account number`)
+        }else{
+            alert(`Transaction Successful`)
+        }
+    }cx
+</script>
